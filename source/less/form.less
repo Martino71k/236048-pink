@@ -1,26 +1,42 @@
-ul {
-    list-style: none;
+.form {
+	padding: 0px 20px;
+}
+
+.form form {
+    padding: 44px 0;
 }
 
 .form__intro {
     font-size: 14px;
     line-height: 30px;
     color: @text-darkblue;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 52px;
+}
+
+.form__list {
+	list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .form__label {
+    padding-left: 22px;
 	font-size: 14px;
     line-height: 30px;
     color: @text-pink;
+    text-transform: uppercase;
 }
 
 .form__input {
     width: 276px;
 	border: 2px solid lightgray;
     padding-top: 19px;
-    padding-right: 79px;
     padding-bottom: 19px;
     padding-left: 20px;
+    margin-bottom: 25px;
 }
 
 .form__fieldset {
@@ -28,19 +44,38 @@ ul {
 }
 
 .form__legend {
+    padding-top: 42px;
 	font-size: 14px;
     line-height: 18px;
     color: @text-pink;
+    text-align: center;
+    width: 220px;
+    text-transform: uppercase;
+    
 }
 
 .achiev {
 	background-color: #f2f2f2;
 }
 
+.achiev__list {
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achiev__item {
+	padding-bottom: 47px;
+}
+
 .achiev__label {
 	font-size: 18px;
     line-height: 30px;
     color: @text-darkblue;
+}
+
+.form__contact {
+	padding-top: 42px;
 }
 
 .platform {
@@ -53,7 +88,14 @@ ul {
     color: @text-darkblue;
 }
 
+.form__textarea {
+    width: 280px;
+}
+
 .submit-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 56px;
     font-family: inherit;
     padding: 20px 43px;
 	font-size: 18px;
@@ -67,10 +109,13 @@ ul {
 }
 
 .form__note {
+    margin: 0;
+    padding-top: 45px;
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
     color: @text-darkblue;
+    text-align: center;
 }
 
 .sup {
