@@ -2,6 +2,13 @@
 	background-color: #f2f2f2;
 }
 
+@media(min-width: @desktops) {
+    .upload{
+    width: 940px;
+        margin: 0 auto;
+    }
+}
+
 .upload__text-container {
 	background-color: #fff;
 }
@@ -15,6 +22,13 @@
     margin: 0 auto;
 }
 
+@media(min-width: @tablets) {
+    .upload__text {
+    font-size: 18px;
+    width: 425px;
+    }
+}
+
 .upload__img-container {
     width: 320px;
 }
@@ -22,6 +36,19 @@
 .upload__img {
 	width: 100%;
     padding: 20px;
+}
+
+@media(min-width: @desktops) {
+    .upload__img {
+    padding: 57px 80px;
+    }
+}
+
+@media (min-width: @desktops) {
+    .upload__button-container {
+	display: flex;
+    width: 410px;
+    }
 }
 
 .upload-btn {
@@ -43,7 +70,7 @@
     display: block;
     margin: 0 auto;
     width: 280px;
-	padding: 20px 90px;
+	padding: 18px 90px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -51,4 +78,27 @@
     border: 3px solid @text-pink;
     border-radius: 50px;
     background-color: #f2f2f2;
+    
+    &:disabled {
+        border: 3px solid rgba(40,54,69,0.1);
+        color: rgba(40,54,69,0.1);
+    }
 }
+
+@media (min-width: @desktops) {
+    .upload-btn {
+    width: 183px;
+    padding: 20px 40px;
+    }
+}
+
+@media (min-width: @desktops) {
+    .cancel-btn {
+    width: 183px;
+    padding: 20px 40px;
+    margin-bottom: 12px;
+    }
+}
+
+
+

@@ -38,8 +38,8 @@
                 </div>
                 <p class="user-photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
                 <ul class="user-photo__list">
-                    <li class="user-photo__item">
-                        <div class="user-photo-container">
+                    <li class="user-photo__item user-photo__item--panorama">
+                        <div class="user-photo__img-container">
                             <img class="user-photo__photo" src="img/panorama-mobile@1x.jpg" alt="Фото">
                         </div>
                         <div class="user-photo__item-container">
@@ -51,7 +51,7 @@
                         </div>
                     </li>
                     <li class="user-photo__item">
-                        <div class="user-photo-container">
+                        <div class="user-photo__img-container">
                             <img class="user-photo__photo" src="img/photo-car-mobile@1x.jpg" alt="Фото">
                         </div>
                         <div class="user-photo__item-container">
@@ -63,7 +63,7 @@
                         </div>
                     </li>
                     <li class="user-photo__item">
-                        <div class="user-photo-container">
+                        <div class="user-photo__img-container">
                             <img class="user-photo__photo" src="img/photo-drumset-mobile@1x.jpg" alt="Фото">
                         </div>
                         <div class="user-photo__item-container">
@@ -75,7 +75,7 @@
                         </div>
                     </li>
                     <li class="user-photo__item">
-                        <div class="user-photo-container">
+                        <div class="user-photo__img-container">
                             <img class="user-photo__photo" src="img/photo-window-mobile@1x.jpg" alt="Фото">
                         </div>
                         <div class="user-photo__item-container">
@@ -87,7 +87,7 @@
                         </div>
                     </li>
                     <li class="user-photo__item">
-                        <div class="user-photo-container">
+                        <div class="user-photo__img-container">
                             <img class="user-photo__photo" src="img/photo-fair-mobile@1x.jpg" alt="Фото">
                         </div>
                         <div class="user-photo__item-container">
@@ -99,7 +99,7 @@
                         </div>
                     </li>
                     <li class="user-photo__item">
-                        <div class="user-photo-container">
+                        <div class="user-photo__img-container">
                             <img class="user-photo__photo" src="img/photo-pov-mobile@1x.jpg" alt="Фото">
                         </div>
                         <div class="user-photo__item-container">
@@ -111,7 +111,7 @@
                         </div>
                     </li>
                     <li class="user-photo__item">
-                        <div class="user-photo-container">
+                        <div class="user-photo__img-container">
                             <img class="user-photo__photo" src="img/photo-wing-mobile@1x.jpg" alt="Фото">
                         </div>
                         <div class="user-photo__item-container">
@@ -134,8 +134,10 @@
                 <div class="upload__img-container">
                     <img class="upload__img" src="img/photo-road-mobile@1x.jpg" alt="Загруженное фото">
                 </div>
-                <button class="upload-btn">Запостить</button>
-                <button class="cancel-btn">Отмена</button>
+                <div class="upload__button-container">
+                    <button class="upload-btn">Запостить</button>
+                    <button class="cancel-btn" disabled>Отмена</button>
+                </div>
             </section>
             
             </main>
