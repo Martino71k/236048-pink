@@ -1,24 +1,44 @@
 .download {
   background-color: #1d2631;
-  background-image: url("/img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  width: 320px;
   margin: 0 auto;
 }
 
 
 @media (min-width: @tablets) {
-  .download {
-    width: 660px;
+  .download__wrapper {
+    width: 620px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktops) {
-  .download {
-    width: auto;
+  .download__wrapper {
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
+
+@media (min-width: @tablets) {
+  .download {
+  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+}
+
+.download__img-container {
+  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 462px;
+}
+
+@media (min-width: @tablets) {
+  .download__img-container {
+  background-image: none;
+  }
+}
 
 .download__img {
   margin-top: 176px;
@@ -61,6 +81,7 @@
   border: 3px solid white;
   background-color: #1d2631;
   border-radius: 40px;
+  margin-top: 28px;
 }
 
 @media (min-width: @tablets) {
