@@ -1,155 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>HTML Academy: Pink</title>
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav class="navigation">
-                <button class="navigation__toggle" type="button">Открыть меню</button>
-                <a class="navigation__logo" href="#">
-                    <img src="img/logo-pink-white-mobile.svg" alt="Лого">
-                </a>
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="index.html">Главная</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--active" href="#">Фотографии</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="form.html">Конкурс</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#">Html academy</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h1 class="visually-hidden">Фотографии</h1>
-            <section class="user-photo">
-                <div class="user-photo__promo-container">
-                    <h2 class="user-photo__title">Фотографии пользователей</h2>
-                </div>
-                <p class="user-photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-                <ul class="user-photo__list">
-                    <li class="user-photo__item user-photo__item--panorama">
-                        <div class="user-photo__img-container">
-                            <img class="user-photo__photo" src="img/panorama-mobile@1x.jpg" alt="Фото">
-                        </div>
-                        <div class="user-photo__item-container">
-                            <p class="user-photo__name">Анна</p>
-                            <span class="user-photo__time">(5 минут назад)</span>
-                            <p class="user-photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                            <button class="user-photo__like-btn">Нравится:</button>
-                            <span class="user-photo__like-count">213</span>
-                        </div>
-                    </li>
-                    <li class="user-photo__item">
-                        <div class="user-photo__img-container">
-                            <img class="user-photo__photo" src="img/photo-car-mobile@1x.jpg" alt="Фото">
-                        </div>
-                        <div class="user-photo__item-container">
-                            <p class="user-photo__name">Левон</p>
-                            <span class="user-photo__time">(5 часов назад)</span>
-                            <p class="user-photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                            <button class="user-photo__like-btn">Нравится:</button>
-                            <span class="user-photo__like-count">356</span>
-                        </div>
-                    </li>
-                    <li class="user-photo__item">
-                        <div class="user-photo__img-container">
-                            <img class="user-photo__photo" src="img/photo-drumset-mobile@1x.jpg" alt="Фото">
-                        </div>
-                        <div class="user-photo__item-container">
-                            <p class="user-photo__name">Антон</p>
-                            <span class="user-photo__time">(12 часов назад)</span>
-                            <p class="user-photo__comment">Соседи будут рады!</p>
-                            <button class="user-photo__like-btn">Нравится:</button>
-                            <span class="user-photo__like-count">666</span>
-                        </div>
-                    </li>
-                    <li class="user-photo__item">
-                        <div class="user-photo__img-container">
-                            <img class="user-photo__photo" src="img/photo-window-mobile@1x.jpg" alt="Фото">
-                        </div>
-                        <div class="user-photo__item-container">
-                            <p class="user-photo__name">Борис</p>
-                            <span class="user-photo__time">(20 часов назад)</span>
-                            <p class="user-photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                            <button class="user-photo__like-btn">Нравится:</button>
-                            <span class="user-photo__like-count">215</span>
-                        </div>
-                    </li>
-                    <li class="user-photo__item">
-                        <div class="user-photo__img-container">
-                            <img class="user-photo__photo" src="img/photo-fair-mobile@1x.jpg" alt="Фото">
-                        </div>
-                        <div class="user-photo__item-container">
-                            <p class="user-photo__name">Сергей</p>
-                            <span class="user-photo__time">(25 часов назад)</span>
-                            <p class="user-photo__comment">Самая кубанская в мире!</p>
-                            <button class="user-photo__like-btn">Нравится:</button>
-                            <span class="user-photo__like-count">4</span>
-                        </div>
-                    </li>
-                    <li class="user-photo__item">
-                        <div class="user-photo__img-container">
-                            <img class="user-photo__photo" src="img/photo-pov-mobile@1x.jpg" alt="Фото">
-                        </div>
-                        <div class="user-photo__item-container">
-                            <p class="user-photo__name">Максим</p>
-                            <span class="user-photo__time">(40 часов назад)</span>
-                            <p class="user-photo__comment">Где снего-то?</p>
-                            <button class="user-photo__like-btn">Нравится:</button>
-                            <span class="user-photo__like-count">150</span>
-                        </div>
-                    </li>
-                    <li class="user-photo__item">
-                        <div class="user-photo__img-container">
-                            <img class="user-photo__photo" src="img/photo-wing-mobile@1x.jpg" alt="Фото">
-                        </div>
-                        <div class="user-photo__item-container">
-                            <p class="user-photo__name">Надежда</p>
-                            <span class="user-photo__time">(45 часов назад)</span>
-                            <p class="user-photo__comment">Всем GM и взаимные лайки!</p>
-                            <button class="user-photo__like-btn">Нравится:</button>
-                            <span class="user-photo__like-count">2560</span>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section class="upload">
-                <div class="upload__text-container">
-                    <h3 class="visually-hidden">Загрузите свое фото!</h3>
-                    <p class="upload__text">Затмите их всех!</p>
-                    <p class="upload__text">Выкладывайте все, что накопилось в телефоне!</p>
-                </div>
-                <div class="upload__img-container">
-                    <img class="upload__img" src="img/photo-road-mobile@1x.jpg" alt="Загруженное фото">
-                </div>
-                <div class="upload__button-container">
-                    <button class="upload__upload-btn">Запостить</button>
-                    <button class="upload__cancel-btn" disabled>Отмена</button>
-                </div>
-            </section>
-            </main>
-            <footer class="page-footer">
-                <img src="http://placehold.it/147x40" alt="Лого">
-                <div class="page-footer__social social">
-                    <ul class="page-footer_list social__list">
-                        <li class="social__item social__item--twitter"></li>
-                        <li class="social__item social__item--facebook"></li>
-                        <li class="social__item social__item--youtube"></li>
-                    </ul>
-                </div>
-                <a href="#">
-                    <p>Разработано</p>
-                    <img src="img/logo-htmlacademy.svg" alt="Html Academy лого">
-                </a>
-            </footer>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Pink</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navigation">
+      <button class="navigation__toggle" type="button">Открыть меню</button>
+      <a class="navigation__logo" href="#">
+        <img src="img/logo-pink-white-mobile.svg" alt="Лого">
+      </a>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--active" href="#">Фотографии</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Html academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Фотографии</h1>
+    <section class="user-photo">
+      <div class="user-photo__promo-container">
+        <h2 class="user-photo__title">Фотографии пользователей</h2>
+      </div>
+      <p class="user-photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <ul class="user-photo__list">
+        <li class="user-photo__item user-photo__item--panorama">
+          <div class="user-photo__img-container">
+            <img class="user-photo__photo" src="img/panorama-mobile@1x.jpg" alt="Фото">
+          </div>
+          <div class="user-photo__item-container user-photo__item-container--panorama">
+            <div class="user-photo__name-container user-photo__name-container--panorama">
+              <p class="user-photo__name user-photo__name--panorama">Анна</p>
+              <span class="user-photo__time user-photo__time--panorama">(5 минут назад)</span>
+            </div>
+            <p class="user-photo__comment user-photo__comment--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="user-photo__like-container user-photo__like-container--panorama">
+              <button class="user-photo__like-btn user-photo__like-btn--panorama">Нравится:</button>
+              <span class="user-photo__like-count user-photo__like-count--panorama">213</span>
+            </div>
+          </div>
+        </li>
+        <li class="user-photo__item">
+          <div class="user-photo__img-container">
+            <img class="user-photo__photo" src="img/photo-car-mobile@1x.jpg" alt="Фото">
+          </div>
+          <div class="user-photo__item-container">
+            <p class="user-photo__name">Левон</p>
+            <span class="user-photo__time">(5 часов назад)</span>
+            <p class="user-photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <button class="user-photo__like-btn">Нравится:</button>
+            <span class="user-photo__like-count">356</span>
+          </div>
+        </li>
+        <li class="user-photo__item">
+          <div class="user-photo__img-container">
+            <img class="user-photo__photo" src="img/photo-drumset-mobile@1x.jpg" alt="Фото">
+          </div>
+          <div class="user-photo__item-container">
+            <p class="user-photo__name">Антон</p>
+            <span class="user-photo__time">(12 часов назад)</span>
+            <p class="user-photo__comment">Соседи будут рады!</p>
+            <button class="user-photo__like-btn">Нравится:</button>
+            <span class="user-photo__like-count">666</span>
+          </div>
+        </li>
+        <li class="user-photo__item">
+          <div class="user-photo__img-container">
+            <img class="user-photo__photo" src="img/photo-window-mobile@1x.jpg" alt="Фото">
+          </div>
+          <div class="user-photo__item-container">
+            <p class="user-photo__name">Борис</p>
+            <span class="user-photo__time">(20 часов назад)</span>
+            <p class="user-photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <button class="user-photo__like-btn">Нравится:</button>
+            <span class="user-photo__like-count">215</span>
+          </div>
+        </li>
+        <li class="user-photo__item">
+          <div class="user-photo__img-container">
+            <img class="user-photo__photo" src="img/photo-fair-mobile@1x.jpg" alt="Фото">
+          </div>
+          <div class="user-photo__item-container">
+            <p class="user-photo__name">Сергей</p>
+            <span class="user-photo__time">(25 часов назад)</span>
+            <p class="user-photo__comment">Самая кубанская в мире!</p>
+            <button class="user-photo__like-btn">Нравится:</button>
+            <span class="user-photo__like-count">4</span>
+          </div>
+        </li>
+        <li class="user-photo__item">
+          <div class="user-photo__img-container">
+            <img class="user-photo__photo" src="img/photo-pov-mobile@1x.jpg" alt="Фото">
+          </div>
+          <div class="user-photo__item-container">
+            <p class="user-photo__name">Максим</p>
+            <span class="user-photo__time">(40 часов назад)</span>
+            <p class="user-photo__comment">Где снего-то?</p>
+            <button class="user-photo__like-btn">Нравится:</button>
+            <span class="user-photo__like-count">150</span>
+          </div>
+        </li>
+        <li class="user-photo__item">
+          <div class="user-photo__img-container">
+            <img class="user-photo__photo" src="img/photo-wing-mobile@1x.jpg" alt="Фото">
+          </div>
+          <div class="user-photo__item-container">
+            <p class="user-photo__name">Надежда</p>
+            <span class="user-photo__time">(45 часов назад)</span>
+            <p class="user-photo__comment">Всем GM и взаимные лайки!</p>
+            <button class="user-photo__like-btn">Нравится:</button>
+            <span class="user-photo__like-count">2560</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="upload">
+      <div class="upload__text-container">
+        <h3 class="visually-hidden">Загрузите свое фото!</h3>
+        <p class="upload__text">Затмите их всех!</p>
+        <p class="upload__text">Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+      <div class="upload__img-edit-container">
+        <div class="upload__img-container">
+          <img class="upload__img" src="img/photo-road-mobile@1x.jpg" alt="Загруженное фото">
+        </div>
+        <ul class="upload__edit-list">
+          <li class="upload__edit-item"></li>
+          <li class="upload__edit-item"></li>
+          <li class="upload__edit-item"></li>
+        </ul>
+      </div>
+      <div class="upload__button-container">
+        <button class="upload__upload-btn">Запостить</button>
+        <button class="upload__cancel-btn" disabled>Отмена</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer footer--photo">
+    <img src="http://placehold.it/147x40" alt="Лого">
+    <div class="footer__social footer__social--photo">
+      <ul class="footer__list footer__list--photo">
+        <li class="footer__item footer__item--photo footer__item--twitter"></li>
+        <li class="footer__item footer__item--photo footer__item--facebook"></li>
+        <li class="footer__item footer__item--photo footer__item--youtube"></li>
+      </ul>
+    </div>
+    <a href="#">
+      <p class="footer__copyright-text">Разработано</p>
+      <img src="img/logo-htmlacademy.svg" alt="Html Academy лого">
+    </a>
+  </footer>
+</body>
 </html>
