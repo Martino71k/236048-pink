@@ -10,6 +10,14 @@
 
 @media (min-width: @tablets) {
   .price__wrapper {
+    width: 660px;
+    overflow: none;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktops) {
+  .price__wrapper {
     width: 100%;
     overflow: none;
     margin: 0 auto;
@@ -33,8 +41,12 @@
 }
 
 @media (min-width: @tablets) {
-  .price__header:first-of-type {
-    border: 0;
+  .price__header {
+    padding: 17px 40px;
+
+    &:first-of-type {
+      border: 0;
+    }
   }
 }
 
