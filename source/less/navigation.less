@@ -1,5 +1,4 @@
 .navigation {
-  position: relative;
   margin: 0 auto;
   background-color: #283645;
 }
@@ -7,8 +6,65 @@
 .navigation__toggle {
   position: absolute;
   display: block;
-  top: 0;
+  top: 20px;
   right: 20px;
+  width: 70px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navigation--closed .navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.navigation--opened .navigation__toggle {
+  top: 10px;
+  right: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.navigation--closed .navigation__list {
+  display: none;
+}
+
+.navigation__logo-container {
+  background-color: #283645;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 20px 0;
+}
+
+@media (min-width: @tablets) {
+  .navigation__logo-container {
+    padding: 40px 0;
+  }
 }
 
 @media (min-width: @desktops) {
@@ -53,6 +109,10 @@
   text-align: center;
 }
 
+.navigation__item {
+  background-color: #283645;
+}
+
 @media (min-width: @desktops) {
   .navigation__list {
     display: flex;
@@ -62,7 +122,7 @@
 .navigation__link {
   display: block;
   font-family: "Open Sans", "Arial", sans-serif;
-  padding: 27px 79px;
+  padding: 16px 50px;
   color: #ffffff;
   font-weight: 700;
   font-size: 18px;
