@@ -1,13 +1,16 @@
-.footer {
+.footer__wrapper {
   padding: 0 20px;
 }
 
 .footer__intro {
   color: @text-darkblue;
   font-size: 24px;
+  line-height: 27px;
   font-weight: 300;
   text-align: center;
-  padding-bottom: 42px;
+  margin: 0;
+  padding-top: 38px;
+  padding-bottom: 37px;
 }
 
 @media (min-width: @tablets) {
@@ -50,28 +53,61 @@
   }
 }
 
+@media (min-width: @tablets) {
+  .footer__item--index:first-of-type {
+
+  }
+}
+
 .footer__title {
   margin: 0;
   padding: 0;
-  padding-bottom: 12px;
+  padding-bottom: 5px;
   color: @text-darkblue;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
 }
 
+@media (min-width: @tablets) {
+  .footer__title:first-of-type {
+    margin-top: 6px;
+    margin-right: 29px;
+  }
+}
+
 .footer__text {
   margin: 0;
   padding: 0;
-  padding-bottom: 26px;
+  padding-bottom: 22px;
   font-size: 24px;
   color: @text-pink;
   font-weight: 300;
   text-align: center;
 }
 
+.footer__map-container {
+  position: relative;
+  height: 230px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer__map-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat center top;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 .footer__map {
   display: block;
+  width: 100%;
   margin: 0 auto;
 }
 

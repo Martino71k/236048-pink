@@ -3,12 +3,14 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 237px;
+  height: 170px;
+//  height: 237px;
 }
 
 @media (min-width: @tablets) {
   .user-photo__promo-container {
-    height: 438px;
+    height: 330px;
+//    height: 438px;
   }
 }
 
@@ -30,7 +32,7 @@
 
 @media (min-width: @tablets) {
   .user-photo__title {
-    padding-top: 77px;
+    padding-top: 70px;
     width: 370px;
     font-size: 50px;
     line-height: 60px;
@@ -44,7 +46,7 @@
 }
 
 .user-photo__text {
-  padding-top: 49px;
+  padding-top: 45px;
   padding-bottom: 58px;
   font-size: 14px;
   line-height: 30px;
@@ -58,6 +60,7 @@
   .user-photo__text {
     font-size: 18px;
     width: 450px;
+    padding-top: 90px;
   }
 }
 
@@ -65,8 +68,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+
 }
 
 @media (min-width: @tablets) {
@@ -85,8 +87,9 @@
 }
 
 .user-photo__item {
+
   margin-bottom: 20px;
-  background-color: #f2f2f2;
+
 }
 
 @media (min-width: @tablets) {
@@ -130,6 +133,13 @@
   }
 }
 
+
+.user-photo__img-container {
+  width: 320px;
+  height: 170px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablets) {
   .user-photo__img-container {
     width: 100%;
@@ -146,17 +156,21 @@
 
 .user-photo__photo {
   width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .user-photo__item-container {
-  width: 260px;
-  padding-left: 16px;
+  width: 280px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .user-photo__name {
   margin: 0;
-  padding-top: 23px;
-  padding-bottom: 11px;
+  padding-top: 14px;
   display: inline-block;
   color: @text-darkblue;
   font-weight: bold;
@@ -171,12 +185,16 @@
 }
 
 .user-photo__comment {
+  width: 240px;
   margin: 0;
-  padding-bottom: 22px;
+  padding-bottom: 9px;
 }
 
 .user-photo__like-btn {
+  position: relative;
   padding: 0;
+  margin-left: 33px;
+  margin-bottom: 20px;
   border: 0;
   background-color: #f2f2f2;
   font-family: inherit;
@@ -184,6 +202,17 @@
   line-height: 24px;
   color: @text-pink;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -33px;
+    top: 5px;
+    background: url("../img/icon-heart.svg") no-repeat center;
+    width: 13px;
+    height: 12px;
+  }
 }
 
 .user-photo__like-count {
@@ -222,4 +251,15 @@
   .user-photo__item-container--panorama {
     width: 890px;
   }
+}
+
+.user-photo__img-container--panorama {
+  padding: 0;
+  width: 100%;
+  height: 136px;
+}
+
+.user-photo__photo--panorama {
+  padding: 0;
+  width: 100%;
 }
