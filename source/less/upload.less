@@ -14,6 +14,12 @@
   background-color: #ffffff;
 }
 
+@media (min-width: @tablets) {
+  .upload__text-container {
+    padding-bottom: 25px;
+  }
+}
+
 .upload__text {
   font-size: 14px;
   line-height: 30px;
@@ -31,6 +37,10 @@
   .upload__text {
     font-size: 18px;
     width: 425px;
+
+    &:first-of-type {
+      padding-top: 50px;
+    }
   }
 }
 
@@ -40,6 +50,8 @@
     justify-content: space-between;
     width: 620px;
     margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 }
 
@@ -55,6 +67,12 @@
   padding-top: 20px;
   padding-bottom: 42px;
   margin: 0 auto;
+}
+
+@media (min-width: @tablets) {
+  .upload__img-container {
+    margin: 0;
+  }
 }
 
 @media (min-width: @desktops) {
@@ -147,6 +165,15 @@
     color: rgba(40, 54, 69, 0.1);
   }
 }
+
+@media (min-width: @tablets) {
+  .upload__upload-btn {
+    width: 260px;
+    padding: 14px;
+    margin-bottom: 30px;
+  }
+}
+
 
 @media (min-width: @desktops) {
   .upload__upload-btn {
