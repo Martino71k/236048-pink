@@ -1,8 +1,11 @@
 .features {
+  position: relative;
   background-color: #f2f2f2;
 }
 
+
 .features__intro-container {
+  position: relative;
   background-color: #ffffff;
   padding: 0 20px;
   margin: 0 auto;
@@ -11,8 +14,14 @@
 .features__intro-text {
   color: @text-darkblue;
   font-size: 24px;
+  line-height: 29px;
   text-align: center;
-  padding-bottom: 43px;
+  padding-bottom: 5px;
+  font-weight: 300;
+
+  &:first-of-type {
+    padding-top: 15px;
+  }
 }
 
 @media (min-width: @tablets) {
@@ -22,16 +31,17 @@
     font-size: 40px;
     font-weight: 300;
     line-height: 46px;
+    margin-top: 35px;
   }
 
   .features__intro-text:nth-of-type(2) {
     width: 335px;
     margin: 0 auto;
-    padding-top: 13px;
+    padding-top: 3px;
   }
 }
 
-@media (min-width: @tablets) {
+@media (min-width: @desktops) {
   .features__intro-text {
     font-size: 50px;
     line-height: 60px;
@@ -42,16 +52,26 @@
   }
 }
 
+@media (min-width: @tablets) {
+  .features__wrapper {
+    display: flex;
+  }
+}
+
 .features__list {
+  position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 82px;
 }
 
 @media (min-width: @tablets) {
   .features__list {
+    order: 2;
     display: flex;
     flex-direction: column;
+    padding-top: 130px;
   }
 }
 
@@ -68,11 +88,13 @@
 
 .features__item {
   padding: 0 20px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: @tablets) {
   .features__item {
     margin-left: auto;
+    padding-bottom: 41px;
   }
 }
 
@@ -86,7 +108,7 @@
 .features__title {
   margin: 0;
   padding: 0;
-  padding-bottom: 21px;
+  padding-bottom: 12px;
   font-size: 18px;
   line-height: 24px;
   color: @text-darkblue;
@@ -98,6 +120,7 @@
   .features__title {
     line-height: 10px;
     text-align: left;
+    padding-bottom: 20px;
   }
 }
 
@@ -112,7 +135,6 @@
 }
 
 .features__text {
-  padding-bottom: 43px;
   font-size: 14px;
   line-height: 24px;
   color: @text-darkblue;
@@ -125,7 +147,7 @@
   .features__text {
     width: 295px;
     text-align: left;
-    margin-right: 35px;
+    margin-right: 16px;
   }
 }
 
