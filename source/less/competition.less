@@ -9,8 +9,13 @@
 
 @media (min-width: @tablets) {
   .competition__promo-container {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     min-height: 329px;
-}
+
+    @media (min-resolution: @retina-dpi) , (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2.jpg");
+    }
+  }
 }
 
 .competition__title {
