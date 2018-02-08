@@ -46,6 +46,16 @@
   }
 }
 
+@media (min-width: @desktops) {
+  .form__intro {
+    width: 770px;
+// Временно
+    &:first-of-type {
+    padding-top: 76px;
+    }
+  }
+}
+
 @media (max-width: 600px) {
   .form__intro:nth-of-type(2) {
     .hidden();
@@ -101,7 +111,11 @@
 
 @media (min-width: @desktops) {
   .form__fieldset--platform {
-    width: 49%;
+    width: 45%;
+    margin-left: 20px;
+    border: 2px solid #e5e5e5;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
   }
 }
 
@@ -114,12 +128,27 @@
   }
 }
 
+@media (min-width: @desktops) {
+  .form__fieldset--contact {
+    margin-bottom: 50px;
+  }
+}
+
 @media (min-width: @tablets) {
   .form__fieldset--achiev {
     margin-bottom: 50px;
     order: 4;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
+  }
+}
+
+@media (min-width: @desktops) {
+  .form__fieldset--achiev {
+    padding-left: 60px;
+    padding-top: 44px;
+    padding-bottom: 10px;
+
   }
 }
 
@@ -130,6 +159,12 @@
     margin-bottom: 66px;
     border: 2px solid #e5e5e5;
     order: 5;
+  }
+}
+
+@media (min-width: @desktops) {
+  .form__fieldset--describe {
+    padding-bottom: 35px;
   }
 }
 
@@ -155,13 +190,13 @@
 
 @media (min-width: @desktops) {
   .form__wrapper--username {
-    width: 49%;
+
   }
 }
 
 @media (min-width: @desktops) {
   .form__wrapper--platform {
-    width: 49%;
+
   }
 }
 
@@ -179,6 +214,16 @@
   .form__list--contact {
     display: flex;
     justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktops) {
+  .form__list--achiev {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 860px;
   }
 }
 
@@ -203,6 +248,11 @@
     display: flex;
     flex-direction: column-reverse;
     width: 410px;
+    padding-left: 30px;
+
+    &:nth-of-type(2) {
+      padding-left: 0;
+    }
   }
 }
 
@@ -217,6 +267,13 @@
   }
 }
 
+@media (min-width: @desktops) {
+  .form__item--platform {
+
+}
+}
+
+
 @media (min-width: @tablets) {
   .form__item--achiev {
     padding-left: 120px;
@@ -224,6 +281,18 @@
 
     &:first-of-type {
       padding-top: 41px;
+    }
+  }
+}
+
+@media (min-width: @desktops) {
+  .form__item--achiev {
+    padding: 0;
+    width: 260px;
+    padding-bottom: 52px;
+
+    &:first-of-type {
+      padding-top: 0;
     }
   }
 }
@@ -277,6 +346,11 @@
 @media (min-width: @desktops) {
   .form__input {
     width: 339px;
+  }
+
+  .form__input--contact {
+	width: 376px;
+    margin-bottom: 5px;
   }
 }
 
@@ -337,6 +411,13 @@
   }
 }
 
+@media (min-width: @desktops) {
+  .form__textarea {
+    width: 816px;
+    min-height: 124px;
+}
+}
+
 .form__submit-btn {
   display: block;
   margin: 0 auto;
@@ -363,11 +444,17 @@
   }
 }
 
+@media (min-width: @desktops) {
+  .form__button-container {
+	width: 940px;
+    padding: 0;
+}
+}
+
 @media (min-width: @tablets) {
   .form__submit-btn {
     margin: 0;
     padding: 17px 57px;
-
   }
 }
 
@@ -384,6 +471,12 @@
 @media (min-width: @tablets) {
   .form__note {
     padding: 0;
+  }
+}
+
+@media (max-width: @desktops) {
+  .form__note-add {
+	display: none;
   }
 }
 

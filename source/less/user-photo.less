@@ -16,7 +16,8 @@
 
 @media (min-width: @desktops) {
   .user-photo__promo-container {
-    height: 394px;
+    height: 283px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }
 
@@ -65,6 +66,13 @@
   }
 }
 
+@media (min-width: @desktops) {
+  .user-photo__text {
+    width: 575px;
+    padding-bottom: 90px;
+  }
+}
+
 .user-photo__list {
   list-style: none;
   margin: 0;
@@ -88,9 +96,7 @@
 }
 
 .user-photo__item {
-
   margin-bottom: 20px;
-
 }
 
 @media (min-width: @tablets) {
@@ -111,6 +117,10 @@
   .user-photo__item {
     margin-top: 51px;
     margin-bottom: 0;
+
+    &:first-of-type {
+      margin-bottom: 0;
+    }
 
     &:nth-of-type(2n) {
       margin-right: 0;
@@ -172,6 +182,7 @@
 }
 
 .user-photo__item-container {
+  position: relative;
   width: 280px;
   min-height: 171px;
   margin: 0 auto;
@@ -186,6 +197,7 @@
     min-height: 151px;
   }
 }
+
 
 .user-photo__name {
   margin: 0;
@@ -305,9 +317,28 @@
 
 @media (min-width: @desktops) {
   .user-photo__item-container--panorama {
-    width: 890px;
+    width: 940px;
+    min-height: 96px;
+  }
+
+  .user-photo__comment--panorama {
+    width: 870px;
+  }
+
+  .user-photo__like-container--panorama {
+    align-self: flex-end;
+  }
+
+  .user-photo__like-btn--panorama {
+    margin-right: 3px;
+  }
+
+  .user-photo__like-count--panorama {
+	align-self: center;
+    margin-right: 42px;
   }
 }
+
 
 .user-photo__img-container--panorama {
   padding: 0;
@@ -323,7 +354,20 @@
   }
 }
 
+@media (min-width: @desktops) {
+  .user-photo__img-container--panorama {
+  	width: 1200px;
+    height: 506px;
+    margin-left: -130px;
+  }
+}
+
 .user-photo__photo--panorama {
   padding: 0;
   width: 100%;
+}
+
+.user-photo__like-wrapper {
+  position: absolute;
+  bottom: 0;
 }

@@ -7,31 +7,37 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="navigation__logo-container">
-      <a class="navigation__logo" href="#">
-        <img src="img/logo-pink-white-mobile.svg" alt="Лого">
-      </a>
-    </div>
-    <nav class="navigation navigation--opened">
-      <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="navigation__wrapper">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--active" href="#">Фотографии</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Html academy</a>
-          </li>
-        </ul>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="navigation__logo-container">
+        <a class="navigation__logo" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" alt="Лого">
+          </picture>
+        </a>
       </div>
-    </nav>
+      <nav class="navigation navigation--opened">
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active" href="#">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="navigation__uppercase">Html</span> Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
     <h1 class="visually-hidden">Фотографии</h1>
@@ -44,7 +50,11 @@
         <li class="user-photo__item user-photo__item--panorama">
 <!--  NOTE: Панорама во весь экран       -->
           <div class="user-photo__img-container user-photo__img-container--panorama">
-            <img class="user-photo__photo user-photo__photo--panorama" src="img/panorama-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+              <img class="user-photo__photo user-photo__photo--panorama" src="img/panorama-mobile@1x.jpg" alt="Фото">
+            </picture>
           </div>
           <div class="user-photo__item-container user-photo__item-container--panorama">
             <div class="user-photo__name-container user-photo__name-container--panorama">
@@ -60,74 +70,110 @@
         </li>
         <li class="user-photo__item">
           <div class="user-photo__img-container">
-            <img class="user-photo__photo" src="img/photo-car-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+              <img class="user-photo__photo" src="img/photo-car-mobile@1x.jpg" alt="Фото">
+            </picture>
           </div>
           <div class="user-photo__item-container">
             <p class="user-photo__name">Левон</p>
             <span class="user-photo__time">(5 часов назад)</span>
             <p class="user-photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <button class="user-photo__like-btn">Нравится:</button>
-            <span class="user-photo__like-count">356</span>
+            <div class="user-photo__like-wrapper">
+              <button class="user-photo__like-btn">Нравится:</button>
+              <span class="user-photo__like-count">356</span>
+            </div>
           </div>
         </li>
         <li class="user-photo__item">
           <div class="user-photo__img-container">
-            <img class="user-photo__photo" src="img/photo-drumset-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+              <img class="user-photo__photo" src="img/photo-drumset-mobile@1x.jpg" alt="Фото">
+            </picture>
           </div>
           <div class="user-photo__item-container">
             <p class="user-photo__name">Антон</p>
             <span class="user-photo__time">(12 часов назад)</span>
             <p class="user-photo__comment">Соседи будут рады!</p>
-            <button class="user-photo__like-btn">Нравится:</button>
-            <span class="user-photo__like-count">666</span>
+            <div class="user-photo__like-wrapper">
+              <button class="user-photo__like-btn">Нравится:</button>
+              <span class="user-photo__like-count">666</span>
+            </div>
           </div>
         </li>
         <li class="user-photo__item">
           <div class="user-photo__img-container">
-            <img class="user-photo__photo" src="img/photo-window-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+              <img class="user-photo__photo" src="img/photo-window-mobile@1x.jpg" alt="Фото">
+            </picture>
           </div>
           <div class="user-photo__item-container">
             <p class="user-photo__name">Борис</p>
             <span class="user-photo__time">(20 часов назад)</span>
             <p class="user-photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <button class="user-photo__like-btn">Нравится:</button>
-            <span class="user-photo__like-count">215</span>
+            <div class="user-photo__like-wrapper">
+              <button class="user-photo__like-btn">Нравится:</button>
+              <span class="user-photo__like-count">215</span>
+            </div>
           </div>
         </li>
         <li class="user-photo__item">
           <div class="user-photo__img-container">
-            <img class="user-photo__photo" src="img/photo-fair-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+              <img class="user-photo__photo" src="img/photo-fair-mobile@1x.jpg" alt="Фото">
+            </picture>
           </div>
           <div class="user-photo__item-container">
             <p class="user-photo__name">Сергей</p>
             <span class="user-photo__time">(25 часов назад)</span>
             <p class="user-photo__comment">Самая кубанская в мире!</p>
-            <button class="user-photo__like-btn">Нравится:</button>
-            <span class="user-photo__like-count">4</span>
+            <div class="user-photo__like-wrapper">
+              <button class="user-photo__like-btn">Нравится:</button>
+              <span class="user-photo__like-count">4</span>
+            </div>
           </div>
         </li>
         <li class="user-photo__item">
           <div class="user-photo__img-container">
-            <img class="user-photo__photo" src="img/photo-pov-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+              <img class="user-photo__photo" src="img/photo-pov-mobile@1x.jpg" alt="Фото">
+            </picture>
           </div>
           <div class="user-photo__item-container">
             <p class="user-photo__name">Максим</p>
             <span class="user-photo__time">(40 часов назад)</span>
             <p class="user-photo__comment">Где снего-то?</p>
-            <button class="user-photo__like-btn">Нравится:</button>
-            <span class="user-photo__like-count">150</span>
+            <div class="user-photo__like-wrapper">
+              <button class="user-photo__like-btn">Нравится:</button>
+              <span class="user-photo__like-count">150</span>
+            </div>
           </div>
         </li>
         <li class="user-photo__item">
           <div class="user-photo__img-container">
-            <img class="user-photo__photo" src="img/photo-wing-mobile@1x.jpg" alt="Фото">
+           <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+              <img class="user-photo__photo" src="img/photo-wing-mobile@1x.jpg" alt="Фото">
+            </picture>
           </div>
           <div class="user-photo__item-container">
             <p class="user-photo__name">Надежда</p>
             <span class="user-photo__time">(45 часов назад)</span>
             <p class="user-photo__comment">Всем GM и взаимные лайки!</p>
-            <button class="user-photo__like-btn">Нравится:</button>
-            <span class="user-photo__like-count">2560</span>
+            <div class="user-photo__like-wrapper">
+              <button class="user-photo__like-btn">Нравится:</button>
+              <span class="user-photo__like-count">2560</span>
+          </div>
           </div>
         </li>
       </ul>

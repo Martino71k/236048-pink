@@ -7,31 +7,37 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="navigation__logo-container">
-      <a class="navigation__logo" href="#">
-        <img src="img/logo-pink-white-mobile.svg" alt="Лого">
-      </a>
-    </div>
-    <nav class="navigation navigation--opened">
-      <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="navigation__wrapper">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--active" href="#">Конкурс</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Html academy</a>
-          </li>
-        </ul>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="navigation__logo-container">
+        <a class="navigation__logo" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" alt="Лого">
+          </picture>
+        </a>
       </div>
-    </nav>
+      <nav class="navigation navigation--opened">
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active" href="#">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="navigation__uppercase">Html</span> Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
     <h1 class="visually-hidden">Конкурс</h1>
@@ -67,7 +73,7 @@
         <fieldset class="form__fieldset form__fieldset--achiev">
           <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
           <div class="form__wrapper form__wrapper--achiev">
-            <ul class="form__list">
+            <ul class="form__list form__list--achiev">
               <li class="form__item form__item--achiev">
                 <input class="form__checkbox visually-hidden" type="checkbox" name="selfie" id="selfie-checbox" checked>
                 <label class="form__label--achiev" for="selfie-checkbox">Сделал селфи с акулой</label>
@@ -101,18 +107,18 @@
             <ul class="form__list form__list--contact">
               <li class="form__item form__item--contact">
                 <label class="form__label form__label--contact" for="phone-number">Номер телефона</label>
-                <input class="form__input" type="text" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+                <input class="form__input form__input--contact" type="text" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
               </li>
               <li class="form__item form__item--contact">
                 <label class="form__label form__label--contact" for="email">Адрес почты</label>
-                <input class="form__input" type="text" name="email" id="email" placeholder="Введите почту*">
+                <input class="form__input form__input--contact" type="text" name="email" id="email" placeholder="Введите почту*">
               </li>
             </ul>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--platform">
           <legend class="form__legend">С каким приложением путешествовали?</legend>
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--platform">
             <ul class="form__list">
               <li class="form__item form__item--platform">
                 <input class="form__radio visually-hidden" type="radio" name="iOS" id="iOS-radio" checked>
@@ -132,18 +138,22 @@
         <fieldset class="form__fieldset form__fieldset--describe">
           <legend class="form__legend">Опишите свои эмоции</legend>
           <div class="form__wrapper">
-            <textarea class="form__textarea" name="review" id="review" cols="30" rows="10"></textarea>
+            <textarea class="form__textarea" name="review" id="review" ></textarea>
           </div>
         </fieldset>
         <div class="form__button-container">
           <button class="form__submit-btn" type="submit">Отправить форму</button>
-          <p class="form__note"><span class="form__sup"><sup>*</sup></span> — Обязательные поля</p>
+          <p class="form__note"><span class="form__sup"><sup>*</sup></span> — Обязательные <span class="form__note-add">для заполнения </span>поля</p>
         </div>
       </form>
     </section>
   </main>
   <footer class="footer footer--photo">
-    <img src="http://placehold.it/147x40" alt="Лого">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+      <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
+      <img src="img/logo-pink-blue-mobile.svg" alt="Лого">
+    </picture>
     <div class="footer__social footer__social--photo">
       <ul class="footer__list footer__list--photo">
         <li class="footer__item footer__item--photo footer__item--twitter"></li>
