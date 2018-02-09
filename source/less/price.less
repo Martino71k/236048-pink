@@ -39,6 +39,7 @@
     width: 100%;
     overflow: none;
     margin: 0 auto;
+    padding-bottom: 70px;
   }
 }
 
@@ -46,6 +47,12 @@
   margin: 0 auto;
   background-color: #ffffff;
   border-collapse: collapse;
+}
+
+@media (min-width: @desktops) {
+  .price__table {
+    margin-top: 30px;
+}
 }
 
 .price__header {
@@ -66,6 +73,12 @@
       border: 0;
     }
   }
+}
+
+@media (min-width: @desktops) {
+  .price__header {
+    padding: 18px 70px;
+}
 }
 
 .price__name {
@@ -115,6 +128,7 @@
 }
 
 .price__cell {
+  position: relative;
   padding-left: 10px;
   padding-top: 12px;
   padding-bottom: 22px;
@@ -135,8 +149,36 @@
 @media (min-width: @desktops) {
   .price__cell {
     font-size: 18px;
-    padding: 22px;
+    padding: 15px 40px;
   }
+}
+
+.price__cell--on::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-yes.svg");
+  background-size: 31px 21px;
+  width: 30px;
+  height: 30px;
+}
+
+.price__cell--off::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-no.svg");
+  background-size: 27px 27px;
+  width: 30px;
+  height: 30px;
 }
 
 .price__toggles {

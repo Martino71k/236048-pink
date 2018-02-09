@@ -3,6 +3,28 @@
   padding: 0 20px;
 }
 
+
+@media (min-width: @desktops) {
+  .reviews {
+	padding-top: 150px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 73px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 79px;
+      height: 64px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
 .reviews__list {
   list-style: none;
   margin: 0;
@@ -91,7 +113,8 @@
 @media (min-width: @desktops) {
   .reviews__text {
     width: 695px;
-    padding-bottom: 45px;
+    padding-top: 36px;
+    padding-bottom: 35px;
   }
 }
 

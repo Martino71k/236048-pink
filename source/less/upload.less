@@ -44,6 +44,12 @@
   }
 }
 
+@media (min-width: @desktops) {
+  .upload__text:first-of-type {
+    padding-top: 65px;
+  }
+}
+
 @media (min-width: @tablets) {
   .upload__edit-container {
     display: flex;
@@ -95,6 +101,13 @@
   }
 }
 
+@media  (min-width: @desktops) {
+  .upload__filters--container {
+	margin-right: auto;
+    padding-left: 86px;
+}
+}
+
 .upload__edit-list {
   display: flex;
   list-style: none;
@@ -111,6 +124,12 @@
   }
 }
 
+@media (min-width: @desktops) {
+  .upload__edit-list {
+
+  }
+}
+
 .upload__edit-item {
   &:nth-child(2),
   &:nth-child(3) {
@@ -122,6 +141,12 @@
   .upload__edit-item:nth-child(2),
   .upload__edit-item:nth-child(3) {
     margin-left: 0;
+  }
+}
+
+@media (min-width: @desktops) {
+  .upload__edit-item {
+    margin-right: auto;
   }
 }
 
