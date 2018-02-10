@@ -7,13 +7,12 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<!-- NOTE: Херед при закрытой версии прозрачный при открытой под цвет навигации, как реализовать + лого на пк уезжает вверх-->
   <header class="header">
     <div class="header__wrapper">
       <div class="navigation__logo-container">
         <a class="navigation__logo" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img src="img/logo-pink-white-mobile.svg" alt="Лого">
           </picture>
@@ -24,7 +23,7 @@
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--active" href="#">Главная</a>
+              <a class="navigation__link navigation__link--active">Главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="photo.html">Фотографии</a>
@@ -40,7 +39,6 @@
       </nav>
     </div>
   </header>
-<!--  NOTE: Поместить ли картинку в хедер, много ли стилей при этом придеться переопределять-->
   <main>
     <h1 class="visually-hidden">Приложение - Pink</h1>
     <section class="download">
@@ -107,9 +105,6 @@
             <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-<!--        NOTE: Как решить 3 телефона на пк, один слева на планше и 1 снизу на мобильном-->
-<!--       NOTE: Нужна помощь по угловым шейпам-->
-
       </div>
     </section>
     <section class="research">
@@ -121,7 +116,7 @@
         </svg>
       </div>
       <div class="research__container">
-        <h3 class="research__title">Эффект на 24 часа!</h3>
+        <h3 class="research__title">Эффект на&nbsp;24 часа!</h3>
         <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a class="research__link" href="#">Узнать больше об исследовании</a>
       </div>
@@ -213,9 +208,9 @@
     </div>
     <div class="footer__map-container">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
-        <img class="footer__map" src="img/bg-map-mobile@1x.png" alt="Карта">
+        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+        <img class="footer__map" src="img/bg-map-mobile@2x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
       </picture>
     </div>
   </footer>

@@ -12,7 +12,7 @@
       <div class="navigation__logo-container">
         <a class="navigation__logo" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img src="img/logo-pink-white-mobile.svg" alt="Лого">
           </picture>
@@ -29,7 +29,7 @@
               <a class="navigation__link" href="photo.html">Фотографии</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--active" href="#">Конкурс</a>
+              <a class="navigation__link navigation__link--active">Конкурс</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="navigation__uppercase">Html</span> Academy</a>
@@ -46,7 +46,6 @@
         <h2 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
     </section>
-<!--    NOTE: Просьба внимательно посмотреть форму и сказать нужно ли что исправить как лучше ее сделать, особенно пк версию + проблема с легендами вылезающие за филдсет и неравными инпутами-->
     <section class="form">
       <h3 class="visually-hidden">Форма для конкурса</h3>
       <p class="form__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
@@ -55,17 +54,17 @@
         <fieldset class="form__fieldset form__fieldset--username">
           <div class="form__wrapper form__username-wrapper">
             <ul class="form__list form__list--username">
-              <li class="form__item">
+              <li class="form__item form__item--username">
                 <label class="form__label" for="last-name">Фамилия:</label>
-                <input class="form__input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*">
+                <input class="form__input form__input--username" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*">
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--username">
                 <label class="form__label" for="name">Имя:</label>
-                <input class="form__input" type="text" name="name" id="name" placeholder="Укажите ваше имя*">
+                <input class="form__input form__input--username" type="text" name="name" id="name" placeholder="Укажите ваше имя*">
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--username">
                 <label class="form__label" for="middle-name">Отчество:</label>
-                <input class="form__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
+                <input class="form__input form__input--username" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </div>
@@ -150,7 +149,7 @@
   </main>
   <footer class="footer footer--photo">
     <picture>
-      <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+      <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
       <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
       <img src="img/logo-pink-blue-mobile.svg" alt="Лого">
     </picture>
