@@ -49,9 +49,9 @@
 @media (min-width: @desktops) {
   .form__intro {
     width: 770px;
-// Временно
+//Временно
     &:first-of-type {
-    padding-top: 76px;
+      padding-top: 76px;
     }
   }
 }
@@ -124,7 +124,7 @@
     margin-bottom: 64px;
     padding-top: 20px;
     order: 3;
-    border: 2px solid #f2f2f2;
+    border: 2px solid #e5e5e5;
   }
 }
 
@@ -148,7 +148,6 @@
     padding-left: 60px;
     padding-top: 44px;
     padding-bottom: 10px;
-
   }
 }
 
@@ -185,18 +184,6 @@
   .form__wrapper {
     width: 100%;
     padding: 0;
-  }
-}
-
-@media (min-width: @desktops) {
-  .form__wrapper--username {
-
-  }
-}
-
-@media (min-width: @desktops) {
-  .form__wrapper--platform {
-
   }
 }
 
@@ -273,13 +260,6 @@
   }
 }
 
-@media (min-width: @desktops) {
-  .form__item--platform {
-
-}
-}
-
-
 @media (min-width: @tablets) {
   .form__item--achiev {
     padding-left: 120px;
@@ -315,6 +295,66 @@
   font-size: 18px;
   line-height: 30px;
   color: @text-darkblue;
+  position: relative;
+  cursor: pointer;
+}
+
+.form__label--platform {
+  position: relative;
+  cursor: pointer;
+}
+
+.form__checkbox + label::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 25px;
+  left: -35px;
+  background-color: white;
+  border: 2px solid #e5e5e5;
+}
+
+.form__checkbox:hover + label::before {
+  border: 2px solid @text-darkblue;
+}
+
+.form__checkbox:active + label::before {
+  border: 2px solid @text-pink;
+}
+
+.form__checkbox:checked + label::before {
+  background-image: url("../img/icon-checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__radio + label::before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #e5e5e5;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.form__radio:hover + label::before {
+  border: 2px solid @text-darkblue;
+}
+
+.form__radio:active + label::before {
+  border: 2px solid @text-pink;
+}
+
+
+.form__radio:checked + label::before {
+  background-color: @text-pink;
+  box-shadow: inset 0px 0px 0px 8px rgba(255,255,255,1);
 }
 
 @media (min-width: @tablets) {
@@ -341,6 +381,18 @@
   box-sizing: border-box;
   margin-top: 10px;
   margin-bottom: 12px;
+
+  &:hover {
+    border: 2px solid @text-darkblue;
+  }
+
+  &:active {
+    border: 2px solid @text-pink;
+  }
+
+  &:focus {
+    border: 2px solid @text-pink;
+  }
 }
 
 @media (min-width: @tablets) {
@@ -349,9 +401,9 @@
   }
 
   .form__input--username {
-	flex-grow: 1;
+    flex-grow: 1;
     margin-left: 20px;
-}
+  }
 }
 
 @media (min-width: @desktops) {
@@ -360,7 +412,7 @@
   }
 
   .form__input--contact {
-	width: 376px;
+    width: 376px;
     margin-bottom: 5px;
   }
 }
@@ -375,6 +427,18 @@
   width: 220px;
   margin: 0 auto;
   text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .form__legend--achiev {
+    position: relative;
+    top: 20px;
+  }
+
+  .form__legend--platform {
+    position: relative;
+    top: 20px;
+  }
 }
 
 @media (min-width: @tablets) {
@@ -426,7 +490,7 @@
   .form__textarea {
     width: 816px;
     min-height: 124px;
-}
+  }
 }
 
 .form__submit-btn {
@@ -443,6 +507,19 @@
   background-color: @btn-green;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 @media (min-width: @tablets) {
@@ -457,9 +534,9 @@
 
 @media (min-width: @desktops) {
   .form__button-container {
-	width: 940px;
+    width: 940px;
     padding: 0;
-}
+  }
 }
 
 @media (min-width: @tablets) {
@@ -487,7 +564,7 @@
 
 @media (max-width: @desktops) {
   .form__note-add {
-	display: none;
+    display: none;
   }
 }
 

@@ -7,6 +7,9 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="header">
     <div class="header__wrapper">
       <div class="navigation__logo-container">
@@ -56,11 +59,11 @@
             <ul class="form__list form__list--username">
               <li class="form__item form__item--username">
                 <label class="form__label" for="last-name">Фамилия:</label>
-                <input class="form__input form__input--username" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*">
+                <input class="form__input form__input--username" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
               </li>
               <li class="form__item form__item--username">
                 <label class="form__label" for="name">Имя:</label>
-                <input class="form__input form__input--username" type="text" name="name" id="name" placeholder="Укажите ваше имя*">
+                <input class="form__input form__input--username" type="text" name="name" id="name" placeholder="Укажите ваше имя*" required>
               </li>
               <li class="form__item form__item--username">
                 <label class="form__label" for="middle-name">Отчество:</label>
@@ -70,32 +73,32 @@
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--achiev">
-          <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="form__legend form__legend--achiev">Ваши безбашенные достижения в путешествии</legend>
           <div class="form__wrapper form__wrapper--achiev">
             <ul class="form__list form__list--achiev">
               <li class="form__item form__item--achiev">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="selfie" id="selfie-checbox" checked>
-                <label class="form__label--achiev" for="selfie-checkbox">Сделал селфи с акулой</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="selfie" id="achiev#1" checked>
+                <label class="form__label--achiev" for="achiev#1">Сделал селфи с акулой</label>
               </li>
               <li class="form__item form__item--achiev">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="" id="" checked>
-                <label class="form__label--achiev" for="selfie-checkbox">Обгорел на пляже</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="beach" id="achiev#2" checked>
+                <label class="form__label--achiev" for="achiev#2">Обгорел на пляже</label>
               </li>
               <li class="form__item form__item--achiev">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="" id="">
-                <label class="form__label--achiev" for="selfie-checkbox">Видел Чака Норриса</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="Chuck" id="achiev#3">
+                <label class="form__label--achiev" for="achiev#3">Видел Чака Норриса</label>
               </li>
               <li class="form__item form__item--achiev">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="" id="">
-                <label class="form__label--achiev" for="selfie-checkbox">Накупил сувениров</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="souvenir" id="achiev#4">
+                <label class="form__label--achiev" for="achiev#4">Накупил сувениров</label>
               </li>
               <li class="form__item form__item--achiev">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="" id="" checked>
-                <label class="form__label--achiev" for="selfie-checkbox">Удержал башню</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="tower" id="achiev#5" checked>
+                <label class="form__label--achiev" for="achiev#5">Удержал башню</label>
               </li>
               <li class="form__item form__item--achiev">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="" id="">
-                <label class="form__label--achiev" for="selfie-checkbox">Разгромил отель</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="hotel" id="achiev#6">
+                <label class="form__label--achiev" for="achiev#6">Разгромил отель</label>
               </li>
             </ul>
           </div>
@@ -110,13 +113,13 @@
               </li>
               <li class="form__item form__item--contact">
                 <label class="form__label form__label--contact" for="email">Адрес почты</label>
-                <input class="form__input form__input--contact" type="text" name="email" id="email" placeholder="Введите почту*">
+                <input class="form__input form__input--contact" type="text" name="email" id="email" placeholder="Введите почту*" required>
               </li>
             </ul>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--platform">
-          <legend class="form__legend">С каким приложением путешествовали?</legend>
+          <legend class="form__legend form__legend--platform">С каким приложением путешествовали?</legend>
           <div class="form__wrapper form__wrapper--platform">
             <ul class="form__list">
               <li class="form__item form__item--platform">
@@ -124,11 +127,11 @@
                 <label class="form__label--platform" for="iOS-radio">Pink для iOS</label>
               </li>
               <li class="form__item form__item--platform">
-                <input class="form__radio visually-hidden" type="radio" name="Android" id="Android-radio">
+                <input class="form__radio visually-hidden" type="radio" name="iOS" id="Android-radio">
                 <label class="form__label--platform" for="Android-radio">Pink на Android</label>
               </li>
               <li class="form__item form__item--platform">
-                <input class="form__radio visually-hidden" type="radio" name="Windows" id="Windows-radio">
+                <input class="form__radio visually-hidden" type="radio" name="iOS" id="Windows-radio">
                 <label class="form__label--platform" for="Windows-radio">Windows Phone</label>
               </li>
             </ul>
@@ -148,21 +151,41 @@
     </section>
   </main>
   <footer class="footer footer--photo">
-    <picture>
-      <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-      <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
-      <img src="img/logo-pink-blue-mobile.svg" alt="Лого">
-    </picture>
+    <a href="#">
+      <svg class="footer__logo">
+        <use xlink:href="#logo-pink-blue-desktop"></use>
+      </svg>
+    </a>
     <div class="footer__social footer__social--photo">
       <ul class="footer__list footer__list--photo">
-        <li class="footer__item footer__item--photo footer__item--twitter"></li>
-        <li class="footer__item footer__item--photo footer__item--facebook"></li>
-        <li class="footer__item footer__item--photo footer__item--youtube"></li>
+        <li class="footer__item footer__item--photo footer__item--twitter">
+          <a class="footer__social-link" href="twitter.com">
+            <svg class="footer__social-svg footer__social-svg--twitter">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item footer__item--photo footer__item--facebook">
+          <a class="footer__social-link" href="facebook.com">
+            <svg class="footer__social-svg footer__social-svg--facebook">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item footer__item--photo footer__item--youtube">
+          <a class="footer__social-link" href="youtube.com">
+            <svg class="footer__social-svg footer__social-svg--youtube">
+              <use xlink:href="#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
       </ul>
     </div>
     <a href="#">
       <p class="footer__copyright-text">Разработано</p>
-      <img src="img/logo-htmlacademy.svg" alt="Html Academy лого">
+      <svg class="footer__copyright-svg">
+        <use xlink:href="#logo-htmlacademy"></use>
+      </svg>
     </a>
   </footer>
   <section class="modal-success">

@@ -8,7 +8,7 @@
 </head>
 <body>
   <div style="display:none">
-    <include src="img/sprite.svg"></include>
+    <include src="build/img/sprite.svg"></include>
   </div>
   <header class="header">
     <div class="header__wrapper">
@@ -136,10 +136,12 @@
           <li class="reviews__item slider__item"></li>
           <li class="reviews__item slider__item"></li>
         </ul>
+        <button class="reviews__arrow-btn reviews__arrow-btn--prev" type="button"></button>
+        <button class="reviews__arrow-btn reviews__arrow-btn--next" type="button"></button>
         <div class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <span class="slider__toggle slider__toggle--active" type="button"></span>
+          <span class="slider__toggle" type="button"></span>
+          <span class="slider__toggle" type="button"></span>
         </div>
       </div>
     </section>
@@ -184,9 +186,9 @@
           </tr>
         </table>
         <div class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <span class="slider__toggle slider__toggle--price" type="button"></span>
+          <span class="slider__toggle slider__toggle--price slider__toggle--active" type="button"></span>
+          <span class="slider__toggle slider__toggle--price" type="button"></span>
         </div>
       </div>
     </section>
@@ -201,7 +203,7 @@
         </li>
         <li class="footer__item footer__item--index">
           <p class="footer__title">Пишите:</p>
-          <p class="footer__text">mail@htmlacademy.ru</p>
+          <p class="footer__text footer__text--mail">mail@htmlacademy.ru</p>
         </li>
         <li class="footer__item footer__item--index">
           <p class="footer__title">Приезжайте в гости:</p>
