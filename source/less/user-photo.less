@@ -3,8 +3,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  height: 170px;
-//height: 237px;
+  min-height: 237px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -17,8 +16,7 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 330px;
-//height: 438px;
+    min-height: 438px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -29,7 +27,7 @@
 
 @media (min-width: @desktops) {
   .user-photo__promo-container {
-    height: 283px;
+    min-height: 394px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -40,7 +38,7 @@
 }
 
 .user-photo__title {
-  padding-top: 34px;
+  padding-top: 130px;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
@@ -51,7 +49,7 @@
 
 @media (min-width: @tablets) {
   .user-photo__title {
-    padding-top: 70px;
+    padding-top: 170px;
     width: 370px;
     font-size: 50px;
     line-height: 60px;
@@ -60,7 +58,7 @@
 
 @media (min-width: @desktops) {
   .user-photo__title {
-    padding-top: 73px;
+    padding-top: 140px;
   }
 }
 

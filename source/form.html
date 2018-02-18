@@ -6,27 +6,31 @@
   <title>HTML Academy: Pink</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="page">
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header">
+  <header class="header page__header page__header--active">
     <div class="header__wrapper">
-      <div class="navigation__logo-container">
-        <a class="navigation__logo" href="#">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img src="img/logo-pink-white-mobile.svg" alt="Лого">
-          </picture>
+      <div class="header__container">
+        <a class="header__logo" href="#">
+          <svg class="logo logo--mobile">
+            <use xlink:href="#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="logo logo--tablet">
+            <use xlink:href="#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="logo logo--desktop">
+            <use xlink:href="#logo-pink-white-desktop"></use>
+          </svg>
         </a>
       </div>
-      <nav class="navigation navigation--opened">
+      <nav class="navigation navigation--closed navigation--nojs">
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="index.html">Главная</a>
+              <a class="navigation__link navigation__link--active" href="index.html">Главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="photo.html">Фотографии</a>
@@ -204,5 +208,6 @@
       <button class="modal-failure__btn">ОК</button>
     </div>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>

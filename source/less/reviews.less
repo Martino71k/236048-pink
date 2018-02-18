@@ -118,6 +118,10 @@
   }
 }
 
+.reviews__btn-container {
+	position: relative;
+}
+
 @media(max-width: @desktops) {
   .reviews__arrow-btn {
     display: none;
@@ -125,35 +129,40 @@
 }
 
 .reviews__arrow-btn {
-  display: block;
-  position: absolute;
-  border: 0;
-  background-color: transparent;
-  width: 22px;
-  height: 42px;
-  opacity: 0.3;
-  cursor: pointer;
+  display: none;
+}
 
-  &--prev {
-    left: 10%;
-    top: 50%;
-    background-image: url("../img/icon-review-arrow-left.svg");
-    background-repeat: no-repeat;
-  }
+@media (min-width: @desktops) {
+  .reviews__arrow-btn {
+    display: block;
+    position: absolute;
+    top: -200px;
+    border: 0;
+    background-color: transparent;
+    width: 22px;
+    height: 42px;
+    opacity: 0.3;
+    cursor: pointer;
 
-  &--next {
-    right: 10%;
-    top: 50%;
-    background-image: url("../img/icon-review-arrow-right.svg");
-    background-repeat: no-repeat;
-  }
+    &--prev {
+      left: 10%;
+      background-image: url("../img/icon-review-arrow-left.svg");
+      background-repeat: no-repeat;
+    }
 
-  &:hover {
-    opacity: 0.6;
-  }
+    &--next {
+      right: 10%;
+      background-image: url("../img/icon-review-arrow-right.svg");
+      background-repeat: no-repeat;
+    }
 
-  &:active {
-    opacity: 0.1;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }
 

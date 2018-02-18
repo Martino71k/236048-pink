@@ -6,21 +6,21 @@
   <title>HTML Academy: Pink</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="page">
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header">
+  <header class="header page__header page__header--active">
     <div class="header__wrapper">
-      <div class="navigation__logo-container">
-        <a class="navigation__logo" href="#">
-          <svg class="logo-mob">
+      <div class="header__container">
+        <a class="header__logo" href="#">
+          <svg class="logo logo--mobile">
             <use xlink:href="#logo-pink-white-mobile"></use>
           </svg>
-          <svg class="logo-tab">
+          <svg class="logo logo--tablet">
             <use xlink:href="#logo-pink-white-tablet"></use>
           </svg>
-          <svg class="logo-des">
+          <svg class="logo logo--desktop">
             <use xlink:href="#logo-pink-white-desktop"></use>
           </svg>
         </a>
@@ -66,7 +66,7 @@
             </li>
             <li class="download__icon-item">
               <a href="#">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
                   <path fill="#A4C639" d="M34.144,14.009H7.945c-0.009,0.11-0.018,0.22-0.018,0.333v18.755c0,1.926,1.457,3.49,3.316,3.627v7.43 c0,1.594,1.291,2.885,2.885,2.885c1.593,0,2.885-1.291,2.885-2.885v-7.42h8.058v7.42c0,1.594,1.291,2.885,2.885,2.885 c1.595,0,2.886-1.291,2.886-2.885v-7.434c1.858-0.137,3.315-1.701,3.315-3.627V14.342C34.157,14.229,34.153,14.119,34.144,14.009z"/>
                   <path id="c-4-9-2-9-2-9" fill="#A4C639" d="M2.886,15.679L2.886,15.679c1.593,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.292,2.886-2.886,2.886l0,0C1.292,33.828,0,32.537,0,30.942V18.564C0,16.97,1.292,15.679,2.886,15.679z"/>
                   <path id="c-4-1-7-3-8-4" fill="#A4C639" d="M39.198,15.679L39.198,15.679c1.595,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.291,2.886-2.886,2.886l0,0c-1.594,0-2.885-1.291-2.885-2.886V18.564C36.313,16.97,37.604,15.679,39.198,15.679z"/>
@@ -76,7 +76,7 @@
             </li>
             <li class="download__icon-item">
               <a href="#">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992" xml:space="preserve">
                   <g>
                     <path id="path5058" fill="#F05423" d="M20.874,19.953H0V0h20.874V19.953z"/>
                     <path id="path5060" fill="#84C441" d="M43.922,19.953H23.049V0h20.873V19.953z"/>
@@ -140,8 +140,10 @@
           <li class="reviews__item slider__item"></li>
           <li class="reviews__item slider__item"></li>
         </ul>
-        <button class="reviews__arrow-btn reviews__arrow-btn--prev" type="button"></button>
-        <button class="reviews__arrow-btn reviews__arrow-btn--next" type="button"></button>
+        <div class="reviews__btn-container">
+          <button class="reviews__arrow-btn reviews__arrow-btn--prev" type="button"></button>
+          <button class="reviews__arrow-btn reviews__arrow-btn--next" type="button"></button>
+        </div>
         <div class="reviews__toggles slider__toggles">
           <span class="slider__toggle slider__toggle--active"></span>
           <span class="slider__toggle"></span>
@@ -150,49 +152,51 @@
       </div>
     </section>
     <section class="price">
-      <div class="price__wrapper slider">
-        <h2 class="visually-hidden">Тарифы Pink</h2>
-        <table class="price__table slider__table">
-          <tr>
-            <th class="price__header">
-            </th>
-            <th class="price__header">
-              <div class="price__name">База</div>
-              <div class="price__cost">1,99 USD</div>
-            </th>
-            <th class="price__header price__header--best">
-              <div class="price__name price__name--best">Стандарт</div>
-              <div class="price__cost price__cost--best">3,99 USD</div>
-              <div class="price__hit">Хит</div>
-            </th>
-            <th class="price__header">
-              <div class="price__name">Анлим</div>
-              <div class="price__cost">9,99 USD</div>
-            </th>
-          </tr>
-          <tr>
-            <td class="price__cell">Розовый фильтр</td>
-            <td class="price__cell price__cell--on"><span class="visually-hidden">Включено</span></td>
-            <td class="price__cell price__cell--on"><span class="visually-hidden">Включено</span></td>
-            <td class="price__cell price__cell--on"><span class="visually-hidden">Включено</span></td>
-          </tr>
-          <tr>
-            <td class="price__cell">Смайлики</td>
-            <td class="price__cell price__cell--off"><span class="visually-hidden">Отсутствует</span></td>
-            <td class="price__cell price__cell--on"><span class="visually-hidden">Включено</span></td>
-            <td class="price__cell price__cell--on"><span class="visually-hidden">Включено</span></td>
-          </tr>
-          <tr>
-            <td class="price__cell">Комментарии</td>
-            <td class="price__cell price__cell--off"><span class="visually-hidden">Отсутствует</span></td>
-        <td class="price__cell price__cell--off"><span class="visually-hidden">Отсутствует</span></td>
-            <td class="price__cell price__cell--on"><span class="visually-hidden">Включено</span></td>
-          </tr>
-        </table>
-        <div class="price__toggles slider__toggles">
-          <span class="slider__toggle slider__toggle--price"></span>
-          <span class="slider__toggle slider__toggle--price slider__toggle--active"></span>
-          <span class="slider__toggle slider__toggle--price"></span>
+    <h2 class="visually-hidden">Тарифы Pink</h2>
+      <div class="slider">
+        <div class="price__wrapper">
+          <table class="price__table price__table--standart slider__table">
+            <tr>
+              <th class="price__header">
+              </th>
+              <th class="price__header">
+                <div class="price__name">База</div>
+                <div class="price__cost">1,99&nbsp;USD</div>
+              </th>
+              <th class="price__header price__header--best">
+                <div class="price__name price__name--best">Стандарт</div>
+                <div class="price__cost price__cost--best">3,99&nbsp;USD</div>
+                <div class="price__hit">Хит</div>
+              </th>
+              <th class="price__header">
+                <div class="price__name">Анлим</div>
+                <div class="price__cost">9,99&nbsp;USD</div>
+              </th>
+            </tr>
+            <tr>
+              <td class="price__cell">Розовый фильтр</td>
+              <td class="price__cell price__cell--on"><span class="visually-hidden">Включено</span></td>
+              <td class="price__cell price__cell--on"><span class="visually-hidden">Включено</span></td>
+              <td class="price__cell price__cell--on"><span class="visually-hidden">Включено</span></td>
+            </tr>
+            <tr>
+              <td class="price__cell">Смайлики</td>
+              <td class="price__cell price__cell--off"><span class="visually-hidden">Отсутствует</span></td>
+              <td class="price__cell price__cell--on"><span class="visually-hidden">Включено</span></td>
+              <td class="price__cell price__cell--on"><span class="visually-hidden">Включено</span></td>
+            </tr>
+            <tr>
+              <td class="price__cell">Комментарии</td>
+              <td class="price__cell price__cell--off"><span class="visually-hidden">Отсутствует</span></td>
+          <td class="price__cell price__cell--off"><span class="visually-hidden">Отсутствует</span></td>
+              <td class="price__cell price__cell--on"><span class="visually-hidden">Включено</span></td>
+            </tr>
+          </table>
+          <div class="price__toggles slider__toggles">
+            <span class="slider__toggle slider__toggle--price"></span>
+            <span class="slider__toggle slider__toggle--price slider__toggle--active"></span>
+            <span class="slider__toggle slider__toggle--price"></span>
+          </div>
         </div>
       </div>
     </section>

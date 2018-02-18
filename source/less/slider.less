@@ -1,0 +1,45 @@
+.slider__toggle {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: 1px;
+  margin-right: 1px;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+  }
+
+  &--active::before {
+    border: 3px solid black;
+    background-color: white;
+  }
+}
+
+.slider__toggle--price {
+  margin-top: 20px;
+}
+
+@media (min-width: @tablets) {
+  .slider__toggle--price {
+    display: none;
+  }
+}
+
+@media (min-width: @desktops) {
+  .slider__toggle {
+    display: none;
+  }
+}
