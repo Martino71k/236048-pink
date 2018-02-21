@@ -15,15 +15,31 @@
   z-index: 0;
 }
 
+@media (min-width: @tablets) {
+  .features::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 115px;
+    left: 0;
+    background: url("../img/bg-triangle-white.svg") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    z-index: 0;
+  }
+}
+
 @media (min-width: @desktops) {
   .features::before {
   content: "";
   display: block;
   position: absolute;
-  top: 190px;
+  top: 180px;
   left: 0;
   background: url("../img/bg-triangle-white.svg") no-repeat center top;
-  background-size: 170%;
+  background-size: cover;
+    height: 300px;
   z-index: 0;
   }
 }
@@ -109,7 +125,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 82px;
+  padding-top: 87px;
 
   &::after {
     content: "";
@@ -118,7 +134,7 @@
     bottom: 0;
     width: 157px;
     height: 277px;
-    margin-top: 40px;
+    margin-top: 13px;
     margin-left: auto;
     margin-right: auto;
     background-image: url("../img/iphone-screen-mobile@1x.png");
@@ -174,6 +190,14 @@
     position: relative;
     width: 240px;
     margin: 0;
+
+    &:first-of-type {
+      padding-left: 30px;
+    }
+
+    &:last-of-type {
+      padding-right: 30px;
+    }
   }
 }
 
@@ -255,6 +279,7 @@
 @media (min-width: @desktops) {
   .features__title {
     padding-top: 55px;
+    padding-bottom: 25px;
     padding-left: 6px;
     font-size: 30px;
     line-height: 30px;
@@ -275,9 +300,9 @@
 
 @media (min-width: @tablets) {
   .features__text {
-    width: 295px;
+    width: 310px;
     text-align: left;
-    margin-right: 16px;
+
   }
 }
 

@@ -22,14 +22,22 @@
     border-radius: 50%;
   }
 
+  &:hover::before {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
   &--active::before {
-    border: 3px solid black;
-    background-color: white;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+  }
+
+  &--active:hover::before {
+    background-color: #ffffff;
   }
 }
 
 .slider__toggle--price {
-  margin-top: 20px;
+  margin-top: 23px;
 }
 
 @media (min-width: @tablets) {

@@ -55,8 +55,11 @@
     </section>
     <section class="form">
       <h3 class="visually-hidden">Форма для конкурса</h3>
-      <p class="form__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-      <p class="form__intro">Пожалуйста, заполните форму ниже:</p>
+      <div class="form__intro">
+        <p class="form__intro--text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="form__intro--line">Пожалуйста, заполните форму ниже:</span>
+        </p>
+      </div>
       <form class="form__page-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset form__fieldset--username">
           <div class="form__wrapper form__username-wrapper">
@@ -82,27 +85,27 @@
             <ul class="form__list form__list--achiev">
               <li class="form__item form__item--achiev">
                 <input class="form__checkbox visually-hidden" type="checkbox" name="selfie" id="achiev01" checked>
-                <label class="form__label--achiev" for="achiev01">Сделал селфи с акулой</label>
+                <label class="form__label form__label--achiev" for="achiev01">Сделал селфи с акулой</label>
               </li>
               <li class="form__item form__item--achiev">
                 <input class="form__checkbox visually-hidden" type="checkbox" name="beach" id="achiev02" checked>
-                <label class="form__label--achiev" for="achiev02">Обгорел на пляже</label>
+                <label class="form__label form__label--achiev" for="achiev02">Обгорел на пляже</label>
               </li>
               <li class="form__item form__item--achiev">
                 <input class="form__checkbox visually-hidden" type="checkbox" name="Chuck" id="achiev03">
-                <label class="form__label--achiev" for="achiev03">Видел Чака Норриса</label>
+                <label class="form__label form__label--achiev" for="achiev03">Видел Чака Норриса</label>
               </li>
               <li class="form__item form__item--achiev">
                 <input class="form__checkbox visually-hidden" type="checkbox" name="souvenir" id="achiev04">
-                <label class="form__label--achiev" for="achiev04">Накупил сувениров</label>
+                <label class="form__label form__label--achiev" for="achiev04">Накупил сувениров</label>
               </li>
               <li class="form__item form__item--achiev">
                 <input class="form__checkbox visually-hidden" type="checkbox" name="tower" id="achiev05" checked>
-                <label class="form__label--achiev" for="achiev05">Удержал башню</label>
+                <label class="form__label form__label--achiev" for="achiev05">Удержал башню</label>
               </li>
               <li class="form__item form__item--achiev">
                 <input class="form__checkbox visually-hidden" type="checkbox" name="hotel" id="achiev06">
-                <label class="form__label--achiev" for="achiev06">Разгромил отель</label>
+                <label class="form__label form__label--achiev" for="achiev06">Разгромил отель</label>
               </li>
             </ul>
           </div>
@@ -111,8 +114,8 @@
           <legend class="form__legend form__legend--contact">Контактная информация</legend>
           <div class="form__wrapper form__contact-wrapper">
             <ul class="form__list form__list--contact">
-              <li class="form__item form__item--contact">
-                <label class="form__label form__label--contact form__item--contact-phone" for="phone-number">Номер телефона</label>
+              <li class="form__item form__item--contact form__item--contact-phone">
+                <label class="form__label form__label--contact" for="phone-number">Номер телефона</label>
                 <input class="form__input form__input--contact" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
               </li>
               <li class="form__item form__item--contact form__item--contact-email">
@@ -128,23 +131,23 @@
             <ul class="form__list">
               <li class="form__item form__item--platform">
                 <input class="form__radio visually-hidden" type="radio" name="iOS" id="iOS-radio" checked>
-                <label class="form__label--platform" for="iOS-radio">Pink для iOS</label>
+                <label class="form__label form__label--platform" for="iOS-radio">Pink для iOS</label>
               </li>
               <li class="form__item form__item--platform">
                 <input class="form__radio visually-hidden" type="radio" name="iOS" id="Android-radio">
-                <label class="form__label--platform" for="Android-radio">Pink на Android</label>
+                <label class="form__label form__label--platform" for="Android-radio">Pink на Android</label>
               </li>
               <li class="form__item form__item--platform">
                 <input class="form__radio visually-hidden" type="radio" name="iOS" id="Windows-radio">
-                <label class="form__label--platform" for="Windows-radio">Windows Phone</label>
+                <label class="form__label form__label--platform" for="Windows-radio">Windows Phone</label>
               </li>
             </ul>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--describe">
-          <legend class="form__legend">Опишите свои эмоции</legend>
+          <legend class="form__legend form__legend--describe">Опишите свои эмоции</legend>
           <div class="form__wrapper">
-            <textarea class="form__textarea" name="review" id="review"></textarea>
+            <textarea class="form__textarea" name="review" id="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
         </fieldset>
         <div class="form__button-container">
@@ -154,9 +157,12 @@
       </form>
     </section>
   </main>
-  <footer class="footer footer--photo">
-    <a href="#">
-      <svg class="footer__logo">
+  <footer class="footer footer--form">
+    <a class="footer__logo" href="index.html">
+      <svg class="logo logo--mobile-footer">
+        <use xlink:href="#logo-pink-blue-mobile"></use>
+      </svg>
+      <svg class="logo logo--desktop-footer">
         <use xlink:href="#logo-pink-blue-desktop"></use>
       </svg>
     </a>
@@ -185,7 +191,7 @@
         </li>
       </ul>
     </div>
-    <a href="#">
+    <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
       <p class="footer__copyright-text">Разработано</p>
       <svg class="footer__copyright-svg">
         <use xlink:href="#logo-htmlacademy"></use>

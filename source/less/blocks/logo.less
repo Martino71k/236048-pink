@@ -1,0 +1,90 @@
+.logo {
+  display: none;
+}
+
+@media (max-width: 659px) {
+  .logo--mobile {
+    display: block;
+    width: 75px;
+    height: 22px;
+
+    fill: #ffffff;
+
+    &:hover {
+      fill: @text-pink;
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+@media (min-width: 660px) and (max-width: 959px) {
+  .logo--tablet {
+    display: block;
+    width: 147px;
+    height: 40px;
+    fill: #ffffff;
+
+    &:hover {
+      fill: @text-pink;
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .logo--desktop {
+    display: block;
+    width: 147px;
+    height: 40px;
+    fill: #ffffff;
+
+    &:hover {
+      fill: @text-pink;
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (max-width: 959px) {
+  .logo--mobile-footer {
+    display: block;
+    width: 147px;
+    height: 40px;
+
+    &:hover {
+      fill: @text-pink;
+    }
+
+    &:active {
+      fill: #000000;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @desktops) {
+  .logo--desktop-footer {
+    display: block;
+    width: 147px;
+    height: 40px;
+
+    &:hover {
+      fill: @text-pink;
+    }
+
+    &:active {
+      fill: #000000;
+      opacity: 0.3;
+    }
+  }
+}
