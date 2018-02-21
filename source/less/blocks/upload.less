@@ -4,6 +4,12 @@
   margin: 0 auto;
 }
 
+@media (min-width: @tablets) {
+  .upload {
+    padding-bottom: 0;
+  }
+}
+
 @media (min-width: @desktops) {
   .upload {
     width: 940px;
@@ -18,6 +24,12 @@
 @media (min-width: @tablets) {
   .upload__text-container {
     padding-bottom: 25px;
+  }
+}
+
+@media (min-width: @desktops) {
+  .upload__text-container {
+    padding-bottom: 18px;
   }
 }
 
@@ -62,13 +74,14 @@
     width: 620px;
     margin: 0 auto;
     padding-top: 36px;
-    padding-bottom: 36px;
+    padding-bottom: 24px;
   }
 }
 
 @media (min-width: @desktops) {
   .upload__edit-container {
     width: 940px;
+    padding-bottom: 0;
   }
 }
 
@@ -82,6 +95,8 @@
 
 @media (min-width: @tablets) {
   .upload__img-container {
+    width: 300px;
+    height: 400px;
     margin: 0;
   }
 }
@@ -100,6 +115,9 @@
 
 @media (min-width: @tablets) {
   .upload__filters-container {
+    width: 250px;
+    margin: 0 auto;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -108,8 +126,7 @@
 
 @media (min-width: @desktops) {
   .upload__filters-container {
-    margin-right: auto;
-    padding-left: 86px;
+    margin-bottom: 30px;
   }
 }
 
@@ -127,14 +144,23 @@
 @media (min-width: @tablets) {
   .upload__edit-list {
     flex-direction: column;
+    padding-bottom: 25px;
   }
 }
+
+@media (min-width: @desktops) {
+  .upload__edit-list {
+    padding-bottom: 140px;
+  }
+}
+
 
 @media (min-width: @tablets) {
   .upload__edit-item {
     display: flex;
-    width: 275px;
+    width: 265px;
     padding: 10px;
+    padding-bottom: 35px;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -150,6 +176,7 @@
   .upload__edit-item {
     margin-right: auto;
     width: 410px;
+    padding-bottom: 18px;
   }
 }
 
@@ -282,6 +309,13 @@
   }
 }
 
+@media (min-width: @tablets) {
+  .upload__range-pointer {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 @media (min-width: @desktops) {
   .upload__button-container {
     display: flex;
@@ -338,7 +372,7 @@
     width: 260px;
     height: 55px;
     padding: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -347,6 +381,7 @@
   .upload__upload-btn {
     width: 183px;
     padding: 10px 40px;
+    margin-left: 40px;
   }
 }
 
@@ -354,6 +389,7 @@
   .upload__cancel-btn {
     width: 260px;
     height: 55px;
+    margin-bottom: 15px;
   }
 }
 
