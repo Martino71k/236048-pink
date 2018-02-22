@@ -1,7 +1,6 @@
 .price {
   position: relative;
   background-color: #f2f2f2;
-  //padding: 0 20px;
 }
 
 .price::before {
@@ -114,13 +113,38 @@
 }
 
 .price__header--best {
-  //position: relative;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 74px;
+    height: 73px;
+    background: url(../img/bg-hit.svg) no-repeat top left;
+    background-size: 74px 73px;
+
+    @media (min-width: @tablets) {
+      width: 61px;
+      height: 61px;
+      left: 2px;
+      background: url(../img/bg-hit-tablet.svg) no-repeat top left;
+      background-size: 61px 61px;
+    }
+
+    @media (min-width: @desktops) {
+      width: 74px;
+      height: 73px;
+      background-size: 74px 73px;
+    }
+  }
 }
 
 .price__hit {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 11px;
+  left: 10px;
   transform: rotate(-45deg);
   font-size: 14px;
   line-height: 30px;
@@ -128,6 +152,22 @@
   text-transform: uppercase;
   font-weight: 300;
   z-index: 50;
+}
+
+@media (min-width: @tablets) {
+  .price__hit {
+    top: 4px;
+    left: 8px;
+  }
+}
+
+@media (min-width: @desktops) {
+  .price__hit {
+    top: 6px;
+    left: 5px;
+    width: 78px;
+    height: 73px;
+  }
 }
 
 .price__cell {
